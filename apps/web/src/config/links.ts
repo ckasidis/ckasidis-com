@@ -9,7 +9,7 @@ export const navItems: Array<NavItem> = [
   { href: "/projects", label: "Projects" },
   { href: "/achievements", label: "Achievements" },
   { href: "/skills", label: "Skills" },
-  { href: "#", label: "Resume" },
+  { href: "/chantharojwong_kasidis_resume.pdf", label: "Resume" },
 ];
 
 export const email = "me@ckasidis.com";
