@@ -2,12 +2,12 @@ export const frontend = [
   {
     title: "HTML",
     description:
-      "The backbone of the web, I use HTML to structure content and create meaningful user interfaces.",
+      "The backbone of the web, I use HTML to structure content and create meaningful user interfaces with correct semantics.",
   },
   {
     title: "CSS",
     description:
-      "With CSS, I bring life to designs, ensuring visually appealing and responsive layouts.",
+      "I bring life to designs with modern CSS and Sass, ensuring visually appealing and responsive layouts.",
   },
   {
     title: "Tailwind",
@@ -35,32 +35,32 @@ export const backend = [
   {
     title: "SQL",
     description:
-      "SQL is my tool for managing and querying relational databases, ensuring efficient data storage and retrieval.",
+      "SQL is my tool for managing and querying relational databases. In addition, I also have experience working with document databases.",
   },
   {
     title: "Go",
     description:
-      "Go is my preferred language for building scalable and performant backend services, catering to high-concurrency scenarios.",
+      "With its simplicity, Go is my preferred language for building scalable and performant cloud-native back-end services.",
   },
   {
     title: "Node.js",
     description:
-      "I rely on Node.js to develop server-side applications, utilizing its non-blocking architecture for efficient handling of I/O operations.",
+      "I rely on Node.js whenever I need to develop full-stack TypeScript applications with reusable logic and end-to-end type safety.",
   },
   {
     title: "Python",
     description:
-      "Python powers my backend scripting needs, providing a versatile and easy-to-read language for various tasks.",
+      "Python powers my data analytics and shell scripting needs, providing a versatile and easy-to-read language for various tasks.",
   },
   {
     title: "REST API",
     description:
-      "RESTful APIs form the foundation of my backend architecture, facilitating seamless communication between client and server.",
+      "RESTful APIs form the foundation of my back-end architecture, facilitating seamless communication between client and server.",
   },
   {
     title: "GraphQL",
     description:
-      "GraphQL empowers me to design flexible APIs that precisely cater to client needs, reducing over-fetching and under-fetching of data.",
+      "GraphQL empowers me to design flexible APIs with good performance and developer experience from front-end to back-end.",
   },
 ];
 
@@ -68,12 +68,12 @@ export const devOps = [
   {
     title: "AWS",
     description:
-      "Amazon Web Services is my cloud platform of choice, enabling me to deploy, manage, and scale applications with ease.",
+      "As a certified AWS Solutions Architect Associate, I provision infrastructure and deploy my applications on Amazon Web Services.",
   },
   {
     title: "Linux",
     description:
-      "Linux serves as the reliable operating system for my deployments, offering stability and security.",
+      "Linux is a reliable operating system for my deployments, offering stability and security. I use Arch, btw.",
   },
   {
     title: "Docker",

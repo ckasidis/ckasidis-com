@@ -45,7 +45,7 @@ export default function Skills() {
   return (
     <SimpleLayout
       title="Technical skills as a Software and DevOps Engineer."
-      intro="I&lsquo;ve worked on multiple projects during my internships and free times to develop expertise on different technologies from front-end to cloud infrastructure. To validate my skills, I also completed the AWS Solutions Architect Associate certification with an excellent score. These are some of my most confident skills."
+      intro="During my internships and free time, I‘ve worked on multiple projects to develop expertise in different technologies, from front-end to cloud infrastructure. To validate myself, I also completed the AWS Solutions Architect Associate certification with an excellent score. These are some of my most confident skills."
     >
       <div className="space-y-20">
         <SkillsSection title="Front-end">

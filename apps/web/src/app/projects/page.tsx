@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <SimpleLayout
       title="Explore my projects and hackathon submissions."
-      intro="I’ve worked on tons of individual and team projects over the years but these are the ones that I’m most proud of. Feel free to discover more projects by visiting my GitHub profile."
+      intro="I’ve worked on tons of individual and team projects over the years, but these are the ones that I’m most proud of. Feel free to discover more projects by visiting my GitHub profile."
     >
       <ul
         role="list"

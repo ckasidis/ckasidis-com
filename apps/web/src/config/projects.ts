@@ -7,7 +7,7 @@ export const projects: Array<Project> = [
   {
     name: "TickETH",
     description:
-      "A Web3 NFT ticketing platform built with Next.js and Ethereum as a submission of Crypto.com 48-hour hackathon.",
+      "A Web3 NFT ticketing platform built with Next.js and Ethereum as a submission of Crypto.com's 48-hour hackathon.",
     link: {
       href: "https://github.com/ckasidis/cdc-hackathon-ticketh",
       label: "github.com",
@@ -24,7 +24,7 @@ export const projects: Array<Project> = [
   {
     name: "Idkclass",
     description:
-      "Online course website with more than 200 monthly active users. Built with Wordpress and LAMP Stack on Microsoft Azure.",
+      "Online course website with more than 200 monthly active users. Built with WordPress and LAMP Stack on Microsoft Azure.",
     link: { href: "https://idkclass.io", label: "idkclass.io" },
     logo: logoHelioStream,
   },

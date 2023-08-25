@@ -61,30 +61,30 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I&lsquo;m Kasidis, an ASEAN Undergraduate Scholar and final year
+              I&lsquo;m Kasidis, an ASEAN Undergraduate Scholar and final-year
               computer science student at Nanyang Technological University.
               I&lsquo;m also the founder of Idkclass, a user-friendly online
               course platform with hundreds of monthly active users.
             </p>
             <p>
-              Driven by a deep passion in Software Engineering and DevOps, I
+              Driven by a deep passion for Software Engineering and DevOps, I
               enjoy developing ambitious applications and mastering the latest
               technologies. Recently, I also passed the AWS Solutions Architect
-              Associate Certification with outstanding score, ready to build
+              Associate Certification with an outstanding score, ready to build
               scalable services on the cloud.
             </p>
             <p>
               Prior to Computer Science, I was an Astronomy Olympiad Student,
               winning a Silver Medal from the 13th International Olympiad on
-              Astronomy at Hungary and 4 Gold Medals from the National Astronomy
-              Olympiads. This experience has provided me with a solid foundation
-              in math, data analytics, and programming.
+              Astronomy in Hungary and 4 Gold Medals from the National Astronomy
+              Olympiads. This experience has provided me with a solid math, data
+              analytics, and programming foundation.
             </p>
             <p>
-              Beyond academics, I&lsquo;ve actively participated in various
+              Beyond academics, I‘ve actively participated in various
               co-curricular activities and volunteer endeavors, including NTU
               Piano Ensemble, NTU IEEE, NTU Cat Management Society, and Thai
-              Student Society Singapore. Through these involvements, I&lsquo;ve
+              Student Society Singapore. Through these involvements, I‘ve
               cultivated a wide range of experiences and soft skills.
             </p>
           </div>
