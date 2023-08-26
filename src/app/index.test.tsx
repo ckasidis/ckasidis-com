@@ -8,7 +8,7 @@ describe("Home", () => {
 
     const heading = screen.getByRole("heading", {
       level: 1,
-      name: /Hello, World!/i,
+      name: /A passionate Software and DevOps Engineer based in Singapore/i,
     });
 
     expect(heading).toBeInTheDocument();
