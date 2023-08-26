@@ -1,9 +1,11 @@
-/** @type {import("eslint").Linter.Config} */
+const path = require("path");
+
+/** @type { import('eslint').Linter.Config } */
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./tsconfig.json",
+    project: path.join(__dirname, "tsconfig.json"),
   },
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -27,6 +29,12 @@ module.exports = {
     ],
   },
   overrides: [
+    {
+      files: ["**/*.cjs"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
     {
       files: ["**/*.test.ts", "**/*.test.tsx"],
       extends: [

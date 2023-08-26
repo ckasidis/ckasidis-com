@@ -29,5 +29,5 @@ module.exports = {
     "^[./]",
   ],
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
-  tailwindConfig: path.join(__dirname, "..", "tailwind-config", "index.ts"),
+  tailwindConfig: path.join(__dirname, "tailwind.config.ts"),
 };

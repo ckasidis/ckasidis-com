@@ -3,7 +3,7 @@ import { type Metadata } from "next";
 import { Layout } from "@/components/Layout";
 import { Providers } from "@/app/providers";
 
-import "@/styles/tailwind.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {

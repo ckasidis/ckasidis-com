@@ -1,20 +1,20 @@
 {
-  "name": "ckasidis-monorepo",
+  "name": "ckasidis.com",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "typecheck": "turbo run typecheck",
-    "test": "turbo run test",
-    "test:watch": "turbo run test:watch",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "prettier:check": "prettier '**/*.{html,css,scss,js,jsx,cjs,mjs,ts,tsx,md,mdx,json,yml,yaml,gql,graphql}' --check",
     "prettier:write": "prettier '**/*.{html,css,scss,js,jsx,cjs,mjs,ts,tsx,md,mdx,json,yml,yaml,gql,graphql}' --write",
+    "typecheck": "tsc --noEmit",
     "commit": "cz",
     "prepare": "husky install"
   },
-  "prettier": "prettier-config-custom",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -25,29 +25,52 @@
       "path": "@commitlint/cz-commitlint"
     }
   },
+  "lint-staged": {
+    "*.{html,css,scss,js,jsx,cjs,mjs,ts,tsx,cts,mts,md,mdx,json,yml,yaml,gql,graphql}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "clsx": "^2.0.0",
+    "next": "13.4.19",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@commitlint/cz-commitlint": "^17.7.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "@tailwindcss/typography": "^0.5.9",
     "@testing-library/jest-dom": "^6.1.2",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/eslint": "^8.44.2",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
     "autoprefixer": "^10.4.15",
     "commitizen": "^4.3.0",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-testing-library": "^6.0.1",
     "husky": "^8.0.3",
     "jest": "^29.6.4",
     "jest-environment-jsdom": "^29.6.4",
     "lint-staged": "^14.0.1",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
-    "prettier-config-custom": "workspace:*",
+    "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.3",
-    "turbo": "^1.10.13",
     "typescript": "^5.2.2"
-  },
-  "packageManager": "pnpm@8.6.12"
+  }
 }
