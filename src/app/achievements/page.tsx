@@ -35,7 +35,7 @@ function Appearance({
 }) {
   return (
     <Card as="article">
-      <Card.Title as="h3" href={href}>
+      <Card.Title as="h3" href={href} newTab>
         {title}
       </Card.Title>
       <Card.Eyebrow decorate>{event}</Card.Eyebrow>

@@ -2,6 +2,7 @@ import { type ComponentType } from "react";
 
 export interface NavItem {
   href: string;
+  newTab?: boolean;
   label: string;
 }
 

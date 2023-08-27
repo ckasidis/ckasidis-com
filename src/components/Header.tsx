@@ -75,14 +75,26 @@ function MoonIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 
 function MobileNavItem({
   href,
+  newTab,
   children,
 }: {
   href: string;
+  newTab?: boolean;
   children: React.ReactNode;
 }) {
   return (
     <li>
-      <Popover.Button as={Link} href={href} className="block py-2">
+      <Popover.Button
+        as={Link}
+        href={href}
+        {...(newTab
+          ? {
+              rel: "noreferrer noopener",
+              target: "_blank",
+            }
+          : {})}
+        className="block py-2"
+      >
         {children}
       </Popover.Button>
     </li>
@@ -134,7 +146,11 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 {navItems.map((item) => (
-                  <MobileNavItem key={item.label} href={item.href}>
+                  <MobileNavItem
+                    key={item.label}
+                    href={item.href}
+                    newTab={item.newTab}
+                  >
                     {item.label}
                   </MobileNavItem>
                 ))}
@@ -149,9 +165,11 @@ function MobileNavigation(
 
 function NavItem({
   href,
+  newTab,
   children,
 }: {
   href: string;
+  newTab?: boolean;
   children: React.ReactNode;
 }) {
   const isActive = usePathname() === href;
@@ -160,6 +178,12 @@ function NavItem({
     <li>
       <Link
         href={href}
+        {...(newTab
+          ? {
+              rel: "noreferrer noopener",
+              target: "_blank",
+            }
+          : {})}
         className={clsx(
           "relative block px-3 py-2 transition",
           isActive
@@ -181,7 +205,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<"nav">) {
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         {navItems.map((item) => (
-          <NavItem key={item.label} href={item.href}>
+          <NavItem key={item.label} href={item.href} newTab={item.newTab}>
             {item.label}
           </NavItem>
         ))}
