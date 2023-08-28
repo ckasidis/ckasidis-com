@@ -13,7 +13,7 @@ export const projects: Array<Project> = [
   {
     name: "Truth or Dare",
     description:
-      "A truth or dare online game built with Next.js, Turborepo, and Docker. Deployed on AWS ECS cluster with AWS CDK.",
+      "A truth or dare online game built with Next.js, React Query, and Zustand. GitHub Actions are configured for CI/CD pipeline.",
     link: { href: "https://tod.ckasidis.com", label: "tod.ckasidis.com" },
   },
   {
